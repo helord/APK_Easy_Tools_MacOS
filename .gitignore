@@ -1,0 +1,45 @@
+# macOS APK Easy Tools - Git Ignore
+
+# 자동 설치되는 도구들 (Git에서 제외)
+android-sdk/                    # Android SDK (자동 다운로드)
+tools/apktool.jar              # apktool
+tools/apktool                  # apktool 실행 스크립트
+tools/dex-tools-*              # dex2jar
+tools/jd-cli.jar               # Java decompiler
+.env                           # 환경설정 (자동 생성)
+
+# 작업 디렉토리 (사용자 데이터)
+workspace/                     # 디컴파일된 프로젝트들
+logs/                          # 로그 파일들
+!workspace/.gitkeep            # 빈 디렉토리 유지
+!logs/.gitkeep                 # 빈 디렉토리 유지
+!tools/.gitkeep                # 빈 디렉토리 유지
+
+# 키스토어 (보안상 제외)
+keystore/*.keystore
+keystore/*.jks
+!keystore/.gitkeep             # 빈 디렉토리 유지
+
+# macOS 시스템 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# APK 파일들
+*.apk
+
+# 개발 도구
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 임시 및 백업 파일
+*.tmp
+*.temp
+*.log
+*.backup
+*.bak
