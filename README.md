@@ -1,6 +1,6 @@
 # macOS APK Easy Tools
 
-> **Windows APK Easy Tool의 완전한 macOS 포트**  
+> **Windows APK Easy Tool의 macOS 포트**  
 > 프로젝트 폴더 내에서 모든 것이 해결되는 자체 포함형 APK 분석 도구
 
 ## 기능
